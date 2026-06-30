@@ -19,7 +19,7 @@ jobs:
 
       - name: Add Private EC2 to Known Hosts
         run: |
-          ssh-keyscan -H <PRIVATE_IP> >> ~/.ssh/known_hosts
+          ssh-keyscan -H 172.31.26.234 >> ~/.ssh/known_hosts
 
       - name: Connect to Private EC2
         run: |
