@@ -25,7 +25,7 @@ jobs:
       - name: Test Connectivity
         run: |
           # ping -c 4 172.31.26.234
-          ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@172.31.26.234 "echo Connected"
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@172.31.26.234 "echo Connected"
 
       - name: Connect to Private EC2
         run: |
